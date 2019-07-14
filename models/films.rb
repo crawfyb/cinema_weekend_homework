@@ -36,8 +36,6 @@ class Film
     values = [@id]
     data = SqlRunner.run(sql, values)
     return data.map{|customer| Customer.new(customer)}
-    # return Customer.map_items(customer_data)
-
   end
 
 
